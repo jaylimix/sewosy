@@ -1,0 +1,331 @@
+body {
+    margin: 0px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#right_panel {
+    right: 0px;
+}
+
+.navigation {
+    height: 100%;
+    position: fixed;
+    width: 177px;
+    background-color: slategray;
+
+}
+
+#left_panel,
+#right_panel {
+    box-shadow: 0px -20px 10px 10px lightblue;
+}
+
+#right_panel img {
+    margin: 10px;
+
+}
+
+.overview {
+    text-shadow: 1px 1px black;
+}
+
+.navigation a {
+    display: block;
+    word-wrap: break-word;
+    border-bottom: 1px solid white;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    text-shadow: 1px 1px black;
+    cursor: pointer;
+    text-align: center;
+}
+
+#products {
+    width: 130px;
+}
+
+.navigation a:hover {
+    color: bisque;
+}
+
+.navigation a:focus {
+    color: aqua;
+}
+
+#video {
+    position: fixed;
+    width: 100%;
+}
+
+#about,
+#contact,
+#catalog {
+
+    margin: 0 auto;
+    font-size: 18px;
+    text-align: center;
+    font-family: monospace;
+}
+
+#about {
+    text-align: initial;
+}
+
+.lock {
+    border: medium solid slategray;
+    margin: 0 auto;
+    position: relative;
+    top: 10px;
+    box-shadow: 0px 0px 10px 5px lightblue;
+}
+
+.image_container {
+    height: 160px;
+    text-align: center;
+}
+
+.image_container img {
+    height: 100%;
+    max-width: 360px;
+}
+
+.downloads {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.door_handle {
+    height: 350px;
+}
+
+
+.brackets {
+    height: 200px;
+}
+
+
+.brackets img,
+.door_handle img {
+    height: 100%;
+    max-width: 400px;
+}
+
+.content {
+    border-top: medium solid slategray;
+    padding: 10px;
+    clear: both;
+    position: relative;
+    bottom: 3px;
+}
+
+.toggle div {
+    line-height: 24px;
+}
+
+.content table {
+    width: 100%;
+    padding: 10px;
+}
+
+.content h3 {
+    text-align: center;
+}
+
+.pdf {
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+}
+
+.pdf a {
+    padding: 20px;
+}
+
+.content li {
+    margin-bottom: 20px;
+}
+
+.overview_spec {
+    text-align: center;
+    cursor: pointer;
+    line-height: 80px;
+}
+
+
+.overview {
+    background-color: slategray;
+    color: white;
+}
+
+.code {
+    line-height: 40px;
+    text-align: center;
+    border-bottom: medium solid slategray;
+    display: grid;
+}
+
+.toggle_buttons {
+    display: flex;
+}
+
+.toggle_buttons div {
+    float: left;
+    width: 50%;
+}
+
+#about hr {
+    border: 1px solid lightgray;
+    margin-top: 30px;
+}
+
+#catalog {
+    padding: 10px;
+}
+
+#catalog img {
+    width: 50%;
+}
+
+#contact {
+    padding-bottom: 100px;
+}
+
+#about {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#contact img {
+    width: 100%;
+}
+
+#about img {
+    width: 100%;
+}
+
+.img_buttons {
+    overflow: auto;
+}
+
+.top_navigation {
+    background: slategray;
+    padding: 10px 10px 10px 0px;
+    height: 30px;
+    text-align: center;
+    display: none;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.top_navigation img {
+    height: 100%;
+    position: relative;
+    left: 20px;
+}
+
+.icon {
+    float: right;
+    font-size: 30px;
+    color: black;
+    padding-right: 10px;
+}
+
+#menu {
+    width: 100%;
+    color: white;
+    top: 51px;
+    z-index: 1;
+    overflow-y: scroll;
+}
+
+#wrapper {
+    font-family: monospace;
+}
+
+.code2 {
+    display: grid;
+    font-weight: bold;
+}
+
+.big_size {
+    height: 200px;
+}
+
+
+#arrows {
+    font-size: 30px;
+}
+
+#arrows:hover {
+    color: white;
+}
+
+i:hover {
+    color: bisque;
+}
+
+@media screen and (max-width: 480px) {
+
+    .pdf a {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 980px) {
+
+    #left_panel,
+    #right_panel {
+        visibility: hidden;
+    }
+
+    .top_navigation {
+        display: block;
+    }
+
+    #video {
+        height: 90%;
+        width: 200%;
+        left: -200px;
+    }
+
+    .wrapper {
+        position: relative;
+        top: 50px;
+    }
+
+    .code2 {
+        line-height: 30px;
+    }
+
+    .brackets img {
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 980px) {
+    .lock {
+        width: 610px;
+    }
+
+    .code2 {
+        line-height: 100px;
+    }
+
+    #about,
+    #contact,
+    #catalog {
+        width: 50%;
+        box-shadow: 0px -20px 10px 10px lightblue;
+        height: 100%;
+    }
+}

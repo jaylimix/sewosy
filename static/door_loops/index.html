@@ -1,0 +1,102 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="/style.css" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<div class="top_navigation">
+    <a href="/"><img src="/logo.png" alt="Sewosy" /></a>
+    <a href="javascript:void(0);" class="icon" id="icon">
+        <i class="fa fa-bars" onclick="toggle_menu(true)"></i>
+    </a>
+
+    <div id="menu" class="navigation" hidden>
+        <a href="/about">About Us</a>
+        <a href="/contact">Contact Us</a>
+        <a href="/catalog">Catalog</a>
+    </div>
+</div>
+
+
+<div id="left_panel" class="navigation">
+    <a href="/"><img src="/logo.png" alt="Sewosy" /></a>
+    <a href="/about">About Us</a>
+    <a href="/contact">Contact Us</a>
+</div>
+
+<div id="right_panel" class="navigation"></div>
+
+<div id="wrapper" class="wrapper"></div>
+
+<script src="/javas.js"></script>
+
+<script>
+
+    fetch('/api_door_loops')
+        .then(
+            function (response) {
+                if (response.status !== 200) {
+                    console.log(response.status)
+                    return;
+                }
+
+                response.json().then(function (arr) {
+
+                    for (var i = 0; i < arr.length; i++) {
+
+                        console.log(arr[i])
+
+                        var lock_jpg = i + '_lock.jpg'
+
+                        var product_code = 'Product Code - ' + arr[i].product_code
+
+                        var overview_id = 'overview_' + i
+
+                        var spec_id = 'spec_' + i
+
+                        var overview_content = 'overview_' + 'content_' + i
+
+                        var catalog = i + '_catalog.pdf'
+
+                        var drawing = i + '_drawing.pdf'
+
+                        var overview_spec_id = 'overview_spec_' + i
+
+                        document.getElementById('wrapper').innerHTML +=
+
+                            '<div class="lock">' +
+
+                            '<div class="image_container big_size">' +
+
+                            '<img src="' + lock_jpg + '" />' +
+
+                            '</div>' +
+
+                            '<strong class="code">' + product_code + '</strong>' +
+
+                            '<div class="content">' +
+
+                            '<h3>' + arr[i].title + '</h3>' +
+
+                            '<div class="toggle" id="' + overview_content + '">' +
+
+                            '<div><center>' + arr[i].body + '</center></div>' +
+
+                            '<div class="pdf">' +
+
+                            '<a href="' + catalog + '" target="_blank">View Product Catalog</a>' +
+
+                            '</div>' +
+
+                            '</div > '
+
+                        document.getElementById('wrapper').innerHTML += '<br/>'
+
+                    }
+                });
+            }
+        )
+        .catch(function (err) {
+            console.log(err)
+        });
+</script>

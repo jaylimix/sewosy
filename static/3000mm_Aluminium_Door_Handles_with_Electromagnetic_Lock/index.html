@@ -1,0 +1,172 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="/style.css" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<div class="top_navigation">
+    <a href="/"><img src="/logo.png" alt="Sewosy" /></a>
+    <a href="javascript:void(0);" class="icon" id="icon">
+        <i class="fa fa-bars" onclick="toggle_menu(true)"></i>
+    </a>
+
+    <div id="menu" class="navigation" hidden>
+        <a href="/about">About Us</a>
+        <a href="/contact">Contact Us</a>
+        <a href="/catalog">Catalog</a>
+    </div>
+</div>
+
+
+<div id="left_panel" class="navigation">
+    <a href="/"><img src="/logo.png" alt="Sewosy" /></a>
+    <a href="/about">About Us</a>
+    <a href="/contact">Contact Us</a>
+</div>
+
+<div id="right_panel" class="navigation"></div>
+
+<div id="wrapper" class="wrapper"></div>
+
+<script src="/javas.js"></script>
+
+<script>
+
+    fetch('/api_3000mm_door_handles')
+        .then(
+            function (response) {
+                if (response.status !== 200) {
+                    console.log(response.status)
+                    return;
+                }
+
+                response.json().then(function (arr) {
+
+                    for (var i = 0; i < arr.length; i++) {
+
+                        var downloads = ''
+
+                        for (var j = 0; j < arr[i].downloads.length; j++) {
+
+                            downloads += '<tr>' +
+
+                                '<td colspan="2">' +
+
+                                '<a target="_blank" class="downloads" href="' + i + '/' + arr[i].downloads[j] + '.pdf ">' + 'View ' + arr[i].downloads[j].replace(/_/g, ' ') + '</a>' +
+
+                                '</td>' +
+
+                                '</tr>' +
+
+                                '<tr>' +
+
+                                '<td colspan="2">' +
+
+                                '<hr />' +
+
+                                '</td>' +
+
+                                '</tr>'
+                        }
+
+                        console.log(arr)
+
+                        var product_code = 'Product Code - ' + arr[i].product_code
+
+                        var overview_id = 'overview_' + i
+
+                        var spec_id = 'spec_' + i
+
+                        var overview_content = 'overview_' + 'content_' + i
+
+                        var overview_spec_id = 'overview_spec_' + i
+
+                        var rows = ""
+
+                        if (arr[i].ip != "") {
+
+                            rows += '<tr><td>IP</td><td>' + arr[i].ip + '</td></tr><tr><td colspan="2"><hr /></td></tr >'
+                        }
+
+                        if (arr[i].voltage != "") {
+
+                            rows += '<tr><td>Voltage</td><td>' + arr[i].voltage + '</td></tr><tr><td colspan="2"><hr /></td></tr >'
+                        }
+
+                        if (arr[i].current != "") {
+
+                            rows += '<tr><td>Current</td><td>' + arr[i].current + '</td></tr><tr><td colspan="2"><hr /></td></tr >'
+                        }
+
+                        if (arr[i].voltage != "") {
+
+                            rows += '<tr><td>Voltage</td><td>' + arr[i].voltage + '</td></tr><tr><td colspan="2"><hr /></td></tr >'
+                        }
+
+                        if (arr[i].holding_force != "") {
+
+                            rows += '<tr><td>Holding Force</td><td>' + arr[i].holding_force + '</td></tr><tr><td colspan="2"><hr /></td></tr >'
+                        }
+
+                        if (arr[i].voltage != "") {
+
+                            rows += '<tr><td>Voltage</td><td>' + arr[i].voltage + '</td></tr><tr><td colspan="2"><hr /></td></tr >'
+                        }
+
+                        if (arr[i].operating_temparature != "") {
+
+                            rows += '<tr><td>Operating Temparature</td><td>' + arr[i].operating_temparature + '</td></tr><tr><td colspan="2"><hr /></td></tr >'
+                        }
+
+                        document.getElementById('wrapper').innerHTML +=
+
+                            '<div class="lock">' +
+
+                            '<center class="door_handle">' +
+
+                            '<img src="' + i + '/lock.jpg" />' +
+
+                            '</center>' +
+
+                            '<strong class="code">' + product_code + '</strong>' +
+
+                            '<div class="toggle_buttons">' +
+
+                            '<div class="overview_spec overview" id="' + overview_id + '" onclick="change_content(this, ' + i + ', \'spec_\')">Overview</div>' +
+
+                            '<div class="overview_spec" onclick="change_content(this, ' + i + ', \'overview_\')" id="' + spec_id + '">Specification</div>' +
+
+                            '</div >' +
+
+                            '<div class="content">' +
+
+                            '<h3>' + arr[i].title + '</h3>' +
+
+                            '<div class="toggle" id="' + overview_content + '">' +
+
+                            '<div>' + arr[i].body + '</div>' +
+
+                            '</div > ' +
+
+                            '<table id="' + overview_spec_id + '" hidden>' +
+
+                            rows +
+
+                            downloads +
+
+                            '</table >' +
+
+                            '</div>' +
+
+                            '</div>' +
+
+                            '<br/>'
+
+                    }
+                });
+            }
+        )
+        .catch(function (err) {
+            console.log(err)
+        });
+</script>
