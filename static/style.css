@@ -266,6 +266,10 @@ i:hover {
     color: bisque;
 }
 
+.height_control {
+    max-height: 260px;
+}
+
 @media screen and (max-width: 480px) {
 
     .pdf a {
