@@ -87,12 +87,11 @@ body::-webkit-scrollbar {
 }
 
 .image_container {
-    height: 160px;
     text-align: center;
 }
 
 .image_container img {
-    height: 100%;
+    width: 100%;
     max-width: 360px;
 }
 
