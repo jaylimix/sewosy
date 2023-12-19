@@ -59,7 +59,8 @@ body::-webkit-scrollbar {
     color: aqua;
 }
 
-#video {
+#video,
+#small_video {
     position: fixed;
     width: 100%;
 }
@@ -279,6 +280,17 @@ i:hover {
     .image_container img {
         width: 100%;
     }
+
+    #video {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 480px) {
+
+    #small_video {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 980px) {
@@ -296,7 +308,8 @@ i:hover {
         display: block;
     }
 
-    #video {
+    #video,
+    #small_video {
         height: 100%;
     }
 
@@ -312,10 +325,15 @@ i:hover {
     .brackets img {
         width: 100%;
     }
+
+
 }
 
 
 @media screen and (min-width: 980px) {
+
+
+
     .lock {
         width: 610px;
     }
