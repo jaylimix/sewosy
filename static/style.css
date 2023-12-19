@@ -91,8 +91,7 @@ body::-webkit-scrollbar {
 }
 
 .image_container img {
-    width: 100%;
-    max-width: 360px;
+    max-width: 330px;
 }
 
 .downloads {
@@ -255,11 +254,6 @@ body::-webkit-scrollbar {
     font-weight: bold;
 }
 
-.big_size {
-    height: 200px;
-}
-
-
 #arrows {
     font-size: 30px;
 }
@@ -291,9 +285,7 @@ i:hover {
     }
 
     #video {
-        height: 90%;
-        width: 200%;
-        left: -200px;
+        height: 100%;
     }
 
     .wrapper {
