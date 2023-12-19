@@ -271,9 +271,17 @@ i:hover {
     .pdf a {
         display: block;
     }
+
+    .image_container img {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 980px) {
+
+    .image_container img {
+        max-width: 400px
+    }
 
     #left_panel,
     #right_panel {
