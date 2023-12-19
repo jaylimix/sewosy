@@ -70,7 +70,7 @@ body::-webkit-scrollbar {
 #catalog {
 
     margin: 0 auto;
-    font-size: 18px;
+    font-size: 15px;
     text-align: center;
     font-family: monospace;
 }
@@ -216,32 +216,32 @@ body::-webkit-scrollbar {
 
 .top_navigation {
     background: slategray;
-    padding: 10px 10px 10px 0px;
+    padding: 10px;
     height: 30px;
     text-align: center;
     display: none;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
+    border-bottom: 1px solid white;
 }
 
 .top_navigation img {
     height: 100%;
     position: relative;
-    left: 20px;
+    right: 16px;
 }
 
 .icon {
-    float: right;
+    float: left;
     font-size: 30px;
     color: black;
-    padding-right: 10px;
 }
 
 #menu {
     width: 100%;
     color: white;
-    top: 51px;
+    top: 50px;
     z-index: 1;
     overflow-y: scroll;
 }
@@ -283,6 +283,10 @@ i:hover {
 
     #video {
         display: none;
+    }
+
+    #about img {
+        margin-top: 25px;
     }
 }
 
