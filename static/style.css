@@ -79,7 +79,7 @@ body::-webkit-scrollbar {
 
 .lock {
     border: medium solid slategray;
-    margin: 0 auto;
+    margin: 0 auto 10;
     position: relative;
     top: 10px;
     box-shadow: 0px 0px 10px 5px lightblue;
