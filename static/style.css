@@ -59,8 +59,7 @@ body::-webkit-scrollbar {
     color: aqua;
 }
 
-#video,
-#small_video {
+#video {
     position: fixed;
     width: 100%;
 }
@@ -281,19 +280,8 @@ i:hover {
         width: 100%;
     }
 
-    #video {
-        display: none;
-    }
-
     #about img {
         margin-top: 25px;
-    }
-}
-
-@media screen and (min-width: 480px) {
-
-    #small_video {
-        display: none;
     }
 }
 
@@ -324,14 +312,10 @@ i:hover {
     .brackets img {
         width: 100%;
     }
-
-
 }
 
 
 @media screen and (min-width: 980px) {
-
-
 
     .lock {
         width: 610px;

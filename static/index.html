@@ -18,13 +18,7 @@
     <a href="/Catalog">Catalog</a>
 </div>
 
-<video autoplay muted loop id="video">
-    <source src="sewosy.mp4" type="video/mp4">
-</video>
-
-<video autoplay muted loop id="small_video">
-    <source src="small_video.mp4" type="video/mp4">
-</video>
+<video autoplay muted loop id="video"></video>
 
 <div id="left_panel" class="navigation">
     <a href="/"><img src="/logo.png" alt="Sewosy" /></a>
@@ -34,5 +28,13 @@
 
 <div id="right_panel" class="navigation"></div>
 
-
 <script src="/javas.js"></script>
+
+<script>
+    if (screen.width <= 480) {
+        document.getElementById('video').innerHTML = '<source src="small_video.mp4" type="video/mp4">'
+    }
+    else {
+        document.getElementById('video').innerHTML = '<source src="big_video.mp4" type="video/mp4">'
+    }
+</script>
