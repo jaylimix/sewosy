@@ -61,6 +61,7 @@ body::-webkit-scrollbar {
 
 #video {
     position: fixed;
+    pointer-events: none;
 }
 
 #about,
