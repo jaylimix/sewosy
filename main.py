@@ -374,7 +374,7 @@ def api_brackets_and_covers():
             "downloads": ["product_catalog", "dimensional_drawing", "mounting_diagram"]},
 
         {"product_code": "EF300C", "title": "Aluminium Cover For EF300 Lock Range", "body": "This aluminium cover is designed to conceal the electromagnetic lock with its bracket when the door is closed.<br/><br/>It is a cover for EF300 lock series with EF300L and EF300/550Z brackets.",
-            "downloads": ["product_catalog", "dimensional_drawing", "mounting_diagram"]},
+            "downloads": ["product_catalog", "dimensional_drawing"]},
 
         {"product_code": "EF300/550Z", "title": "Adjustable Z Bracket", "body": "This bracket is for EF300 and EF550 lock series.<br/><br/>The adjustable bracket ensures good alignment with the armature plate for optimum holding force.<br/><br/>It is meant for any types of swing doors. ",
             "downloads": ["product_catalog", "dimensional_drawing", "mounting_diagram_1", "mounting_diagram_2", "mounting_diagram_3", "mounting_diagram_4", "mounting_diagram_5", "mounting_diagram_6"]},
