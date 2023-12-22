@@ -66,21 +66,21 @@
 
                             '<div class="lock">' +
 
-                            '<center>' +
+                            '<center style="padding: 10px">' +
 
                             '<img style="width:50%; max-width:200px" src="' + lock_jpg + '" />' +
 
-                            '</center>' +
+                            '<br/>' +
 
-                            '<strong class="code">' + product_code + '</strong>' +
+                            '<strong>' + product_code + '</strong>' +
 
-                            '<div class="content">' +
+                            '<br/><br/>' +
+
+                            '<hr style="width:90%" />' +
 
                             '<h3>' + arr[i].title + '</h3>' +
 
-                            '<div class="toggle" id="' + overview_content + '">' +
-
-                            '<div><center>' + arr[i].body + '</center></div>' +
+                            '<div class="toggle" id="' + overview_content + '">' + arr[i].body + '</div>' +
 
                             '<div class="pdf">' +
 
@@ -88,7 +88,7 @@
 
                             '</div>' +
 
-                            '</div > '
+                            '</center> '
 
                         document.getElementById('wrapper').innerHTML += '<br/>'
 

@@ -58,17 +58,21 @@
 
                             '</div>' +
 
-                            '<strong class="code">' + product_code + '</strong>' +
+                            '<center>' +
 
-                            '<div class="content">' +
+                            '<strong>' + product_code + '</strong>' +
+
+                            '<br/><br/>' +
+
+                            '<hr style="width:90%" />' +
 
                             '<h3>' + arr[i].title + '</h3>' +
 
-                            '<div class="toggle" id="' + overview_content + '">' +
+                            '<div class="toggle" id="' + overview_content + '">' + arr[i].body + '</div>' +
 
-                            '<div><center>' + arr[i].body + '</center></div>' +
+                            '<br/>' +
 
-                            '</div > '
+                            '</center> '
 
                         document.getElementById('wrapper').innerHTML += '<br/>'
 
