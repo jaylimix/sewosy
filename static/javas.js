@@ -17,8 +17,6 @@ document.body.innerHTML +=
 
     '<a href="/contact">Contact Us</a>' +
 
-    '<a href="/Catalog">Catalog</a>' +
-
     '</div>' +
 
     '<div id="left_panel" class="navigation">' +
