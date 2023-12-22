@@ -17,7 +17,6 @@ body::-webkit-scrollbar {
     position: fixed;
     width: 160px;
     background-color: slategray;
-
 }
 
 #left_panel,
@@ -47,6 +46,19 @@ body::-webkit-scrollbar {
     padding: 10px;
     text-shadow: 1px 1px black;
     cursor: pointer;
+}
+
+#menu a {
+    background-color: slategray;
+    text-align: right;
+    display: block;
+    word-wrap: break-word;
+    border-bottom: 1px solid white;
+    font-size: 17px;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    text-shadow: 1px 1px black;
 }
 
 #video_loading {
@@ -95,7 +107,7 @@ body::-webkit-scrollbar {
 }
 
 .lock {
-    border: medium solid slategray;
+    border: thick solid slategray;
     margin: 0 auto 10;
     position: relative;
     top: 10px;
@@ -134,7 +146,7 @@ body::-webkit-scrollbar {
 }
 
 .content {
-    border-top: medium solid slategray;
+    border-top: thick solid slategray;
     padding: 10px;
     clear: both;
     position: relative;
@@ -182,7 +194,7 @@ body::-webkit-scrollbar {
 .code {
     line-height: 40px;
     text-align: center;
-    border-bottom: medium solid slategray;
+    border-bottom: thick solid slategray;
     display: grid;
 }
 
