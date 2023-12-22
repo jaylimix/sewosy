@@ -47,15 +47,14 @@
 
     function check_video_running() {
 
-        if (document.getElementById('video').currentTime > 0) {
+        if (document.getElementById('video').play) {
 
-            console.log('video not running')
-            check_video_running()
+            document.getElementById('video_loading').remove()
 
         }
         else {
 
-            document.getElementById('video_loading').remove()
+            check_video_running()
         }
     }
 
