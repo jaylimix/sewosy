@@ -38,25 +38,29 @@
 <script src="/javas.js"></script>
 
 <script>
+
     if (screen.width <= 480) {
+
         document.getElementById('video').innerHTML = '<source src="small_video.mp4" type="video/mp4">'
     }
     else {
+
         document.getElementById('video').innerHTML = '<source src="big_video.mp4" type="video/mp4">'
     }
 
+
     function check_video_running() {
 
-        if (document.getElementById('video').play) {
+        if (document.getElementById('video').currentTime > 0) {
 
             document.getElementById('video_loading').remove()
-
         }
         else {
 
-            check_video_running()
+            setTimeout(() => { check_video_running() }, 500);
         }
     }
 
     check_video_running()
+
 </script>
