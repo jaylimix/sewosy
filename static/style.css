@@ -47,7 +47,6 @@ body::-webkit-scrollbar {
     padding: 10px;
     text-shadow: 1px 1px black;
     cursor: pointer;
-    text-align: center;
 }
 
 #video_loading {
@@ -234,7 +233,6 @@ body::-webkit-scrollbar {
     background: slategray;
     padding: 10px;
     height: 30px;
-    text-align: center;
     display: none;
     width: 100%;
     position: fixed;
@@ -244,12 +242,11 @@ body::-webkit-scrollbar {
 
 .top_navigation img {
     height: 100%;
-    position: relative;
-    right: 16px;
 }
 
 .icon {
-    float: left;
+    position: fixed;
+    right: 15px;
     font-size: 30px;
     color: black;
 }
