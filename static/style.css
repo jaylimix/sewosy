@@ -50,6 +50,20 @@ body::-webkit-scrollbar {
     text-align: center;
 }
 
+#video_loading {
+
+    line-height: 20px;
+    position: fixed;
+    padding: 15px;
+    border: thick solid slategray;
+    border-radius: 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'FontAwesome';
+
+}
+
 #products {
     width: 130px;
 }
