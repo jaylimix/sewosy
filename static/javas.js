@@ -1,3 +1,38 @@
+document.body.innerHTML +=
+
+    '<div class="top_navigation">' +
+
+    '<a href="javascript:void(0);" class="icon" id="icon">' +
+
+    '<i class="fa fa-bars" onclick="toggle_menu(true)"></i>' +
+
+    '</a>' +
+
+    '<a href="/"><img src="/logo.png" alt="Sewosy" /></a>' +
+
+    '</div>' +
+
+    '<div id="menu" class="navigation" hidden>' +
+    '<a href="/about">About Us</a>' +
+
+    '<a href="/contact">Contact Us</a>' +
+
+    '<a href="/Catalog">Catalog</a>' +
+
+    '</div>' +
+
+    '<div id="left_panel" class="navigation">' +
+
+    '<a href="/"><img src="/logo.png" alt="Sewosy" /></a>' +
+
+    '<a href="/about">About Us</a>' +
+
+    '<a href="/contact">Contact Us</a>' +
+
+    '</div>' +
+
+    '<div id="right_panel" class="navigation"></div>'
+
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const menu = urlParams.get('menu')
