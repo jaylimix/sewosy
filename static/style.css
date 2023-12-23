@@ -8,6 +8,10 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+.reading {
+    line-height: 25px;
+}
+
 #right_panel {
     right: 0px;
 }
