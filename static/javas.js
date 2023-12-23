@@ -1,24 +1,5 @@
 document.body.innerHTML +=
 
-    '<div class="top_navigation">' +
-
-    '<a href="javascript:void(0);" class="icon" id="icon">' +
-
-    '<i class="fa fa-bars" onclick="toggle_menu(true)"></i>' +
-
-    '</a>' +
-
-    '<a href="/"><img src="/logo.png" alt="Sewosy" /></a>' +
-
-    '</div>' +
-
-    '<div id="menu" class="navigation" hidden>' +
-    '<a href="/about">About Us</a>' +
-
-    '<a href="/contact">Contact Us</a>' +
-
-    '</div>' +
-
     '<div id="left_panel" class="navigation">' +
 
     '<a href="/"><img src="/logo.png" alt="Sewosy" /></a>' +
@@ -27,126 +8,200 @@ document.body.innerHTML +=
 
     '<a href="/contact">Contact Us</a>' +
 
-    '</div>' +
+    '</div>'
 
-    '<div id="right_panel" class="navigation"></div>'
-
-const queryString = window.location.search;
-const urlParams = new URLSearchParams(queryString);
-const menu = urlParams.get('menu')
+const menu = new URLSearchParams(window.location.search).get('menu')
 
 if (menu == null) {
+
     fetch('/home')
+
         .then(
+
             function (response) {
+
                 if (response.status !== 200) {
-                    document.getElementById('right_panel').innerHTML = 'Looks like there was a problem. Status Code: ' + response.status
+
+                    console.log(response.status)
+
                     return;
                 }
 
-                var div = document.getElementById('right_panel');
-
-                div.innerHTML = '<a href="#" id="arrows"><i onclick="change_arrows_and_menu_items(1)" class="fa-solid fa-circle-arrow-right"></i></a>'
-
                 response.json().then(function (arr) {
+
+                    var right_panel =
+
+                        '<div id="right_panel" class="navigation">' +
+
+                        '<a href="#" id="arrows">' +
+
+                        '<i onclick="change_arrows_and_menu_items(1)" class="fa-solid fa-circle-arrow-right"></i>' +
+
+                        '</a>'
+
+                    var list = ''
 
                     for (var i = 0; i < arr.length; i++) {
 
-                        div.innerHTML += '<a href="/' + arr[i].pages.replace(/ /g, "_") + '">' + arr[i].pages + '</a>';
+                        list += '<a href="/' + arr[i].pages.replace(/ /g, "_") + '">' + arr[i].pages + '</a>'
                     }
 
+                    document.body.innerHTML += right_panel + list + '</div>'
                 });
             }
         )
         .catch(function (err) {
-            document.getElementById("right_panel").innerHTML = 'Fetch Error :-S ' + err
+
+            alert(err)
         });
 }
 
 
 if (menu == 1) {
+
     fetch('/menu_1')
+
         .then(
+
             function (response) {
+
                 if (response.status !== 200) {
-                    document.getElementById('right_panel').innerHTML = 'Looks like there was a problem. Status Code: ' + response.status
-                    return;
+
+                    alert(response.status)
+
+                    return
                 }
-
-                var div = document.getElementById('right_panel');
-
-                div.innerHTML = '<a href="#" id="arrows">' +
-                    '<i onclick="change_arrows_and_menu_items(0)" class="fa-solid fa-circle-arrow-left"></i>' +
-                    '&nbsp&nbsp&nbsp&nbsp' +
-                    '<i onclick="change_arrows_and_menu_items(2)" class="fa-solid fa-circle-arrow-right"></i>' +
-                    '</a>'
 
                 response.json().then(function (arr) {
 
+                    var right_panel =
+
+                        '<div id="right_panel" class="navigation">' +
+
+                        '<a href="#" id="arrows">' +
+
+                        '<i onclick="change_arrows_and_menu_items(0)" class="fa-solid fa-circle-arrow-left"></i>' +
+
+                        '&nbsp&nbsp&nbsp&nbsp' +
+
+                        '<i onclick="change_arrows_and_menu_items(2)" class="fa-solid fa-circle-arrow-right"></i>' +
+
+                        '</a>'
+
+                    var list = ''
+
                     for (var i = 0; i < arr.length; i++) {
 
-                        div.innerHTML += '<a href="/' + arr[i].pages.replace(/ /g, "_") + '?menu=1">' + arr[i].pages + '</a>';
+                        list += '<a href="/' + arr[i].pages.replace(/ /g, "_") + '?menu=1">' + arr[i].pages + '</a>';
                     }
 
+                    document.body.innerHTML += right_panel + list + '</div>'
                 });
             }
         )
         .catch(function (err) {
-            document.getElementById("right_panel").innerHTML = 'Fetch Error :-S ' + err
+
+            alert('Fetch Error :-S ' + err)
         });
 }
 
 if (menu == 2) {
+
     fetch('/menu_2')
+
         .then(
+
             function (response) {
+
                 if (response.status !== 200) {
-                    document.getElementById('right_panel').innerHTML = 'Looks like there was a problem. Status Code: ' + response.status
+
+                    console.log(response.status)
+
                     return;
                 }
 
-                var div = document.getElementById('right_panel');
+                var right_panel =
 
-                div.innerHTML = '<a href="#" id="arrows">' +
+                    '<div id="right_panel" class="navigation">' +
+
+                    '<a href="#" id="arrows">' +
+
                     '<i onclick="change_arrows_and_menu_items(3)" class="fa-solid fa-circle-arrow-left"></i>' +
+
                     '</a>'
+
+                var list = ''
 
                 response.json().then(function (arr) {
 
                     for (var i = 0; i < arr.length; i++) {
 
-                        div.innerHTML += '<a href="/' + arr[i].pages.replace(/ /g, "_") + '?menu=2">' + arr[i].pages + '</a>';
+                        list += '<a href="/' + arr[i].pages.replace(/ /g, "_") + '?menu=2">' + arr[i].pages + '</a>';
                     }
 
+                    document.body.innerHTML += right_panel + list + '</div>'
                 });
             }
         )
         .catch(function (err) {
-            document.getElementById("right_panel").innerHTML = 'Fetch Error :-S ' + err
+
+            alert('Fetch Error :-S ' + err)
         });
 }
 
 fetch('/top_menu')
+
     .then(
+
         function (response) {
+
             if (response.status !== 200) {
-                document.getElementById('right_panel').innerHTML = 'Looks like there was a problem. Status Code: ' + response.status
+
+                alert('Status Code: ' + response.status)
+
                 return;
             }
 
             response.json().then(function (arr) {
 
+                var top_navigation =
+
+                    '<div class="top_navigation">' +
+
+                    '<a href="javascript:void(0);" class="icon" id="icon">' +
+
+                    '<i class="fa fa-bars" onclick="toggle_menu(true)"></i>' +
+
+                    '</a>' +
+
+                    '<a href="/">' +
+
+                    '<img src="/logo.png" alt="Sewosy" />' +
+
+                    '</a>' +
+
+                    '</div>' +
+
+                    '<div id="menu" class="navigation" hidden>' +
+
+                    '<a href="/about">About Us</a>' +
+
+                    '<a href="/contact">Contact Us</a>'
+
+                var list = ''
+
                 for (var i = 0; i < arr.length; i++) {
 
-                    document.getElementById('menu').innerHTML += '<a href="/' + arr[i].pages.replace(/ /g, "_") + '">' + arr[i].pages + '</a>';
+                    list += '<a href="/' + arr[i].pages.replace(/ /g, "_") + '">' + arr[i].pages + '</a>';
                 }
 
-                document.getElementById('menu').innerHTML += '<br/><br/><br/><br/>'
+                document.body.innerHTML += top_navigation + list + '<br/><br/><br/></div>'
             });
         }
     )
     .catch(function (err) {
-        document.getElementById("right_panel").innerHTML = 'Fetch Error :-S ' + err
+
+        alert('Fetch Error :-S ' + err)
     });
 
 function change_arrows_and_menu_items(value) {

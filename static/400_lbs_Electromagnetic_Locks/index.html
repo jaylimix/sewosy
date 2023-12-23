@@ -1,30 +1,43 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" type="text/css" href="/style.css" />
-
 <link rel="icon" type="image/x-icon" href="/favicon.png">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-<div id="wrapper" class="wrapper"></div>
-
-<script src="/javas.js"></script>
-
 <script>
 
+    var script = document.createElement('script')
+
+    script.src = "/javas.js?" + Math.random()
+
+    document.head.appendChild(script)
+
+    var link = document.createElement('link')
+
+    link.type = 'text/css'
+
+    link.rel = 'stylesheet'
+
+    link.href = "/style.css?" + Math.random()
+
+    document.head.appendChild(link)
+
     fetch('/api_400lbs')
+
         .then(
+
             function (response) {
+
                 if (response.status !== 200) {
+
                     console.log(response.status)
+
                     return;
                 }
 
                 response.json().then(function (arr) {
 
                     for (var i = 0; i < arr.length; i++) {
-
-                        console.log(arr[i])
 
                         var lock_jpg = i + '_lock.jpg'
 
@@ -42,15 +55,11 @@
 
                         var overview_spec_id = 'overview_spec_' + i
 
-                        document.getElementById('wrapper').innerHTML +=
+                        document.body.innerHTML +=
 
-                            '<div class="lock">' +
+                            '<center class="lock">' +
 
-                            '<div class="image_container">' +
-
-                            '<img src="' + lock_jpg + '" />' +
-
-                            '</div>' +
+                            '<img width="60%" src="' + lock_jpg + '" />' +
 
                             '<strong class="code">' + product_code + '</strong>' +
 
@@ -68,7 +77,7 @@
 
                             '<div class="toggle" id="' + overview_content + '">' +
 
-                            '<div>' + arr[i].body + '</div>' +
+                            '<div align="left">' + arr[i].body + '</div>' +
 
                             '<div class="pdf">' +
 
@@ -198,20 +207,17 @@
 
                             '</tr>' +
 
-
-
-
                             '</table >' +
 
-                            '</div>'
+                            '</center>' +
 
-                        document.getElementById('wrapper').innerHTML += '<br/>'
-
+                            '<br/>'
                     }
                 });
             }
         )
         .catch(function (err) {
+
             console.log(err)
         });
 </script>

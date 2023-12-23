@@ -1,22 +1,37 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" type="text/css" href="/style.css" />
-
 <link rel="icon" type="image/x-icon" href="/favicon.png">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-<div id="wrapper" class="wrapper"></div>
-
-<script src="/javas.js"></script>
-
 <script>
 
+    var script = document.createElement('script')
+
+    script.src = "/javas.js?" + Math.random()
+
+    document.head.appendChild(script)
+
+    var link = document.createElement('link')
+
+    link.type = 'text/css'
+
+    link.rel = 'stylesheet'
+
+    link.href = "/style.css?" + Math.random()
+
+    document.head.appendChild(link)
+
     fetch('/api_600mm_door_handles')
+
         .then(
+
             function (response) {
+
                 if (response.status !== 200) {
+
                     console.log(response.status)
+
                     return;
                 }
 
@@ -48,8 +63,6 @@
 
                                 '</tr>'
                         }
-
-                        console.log(arr)
 
                         var product_code = 'Product Code - ' + arr[i].product_code
 
@@ -98,7 +111,7 @@
                             rows += '<tr><td>Operating Temparature</td><td>' + arr[i].operating_temparature + '</td></tr><tr><td colspan="2"><hr /></td></tr >'
                         }
 
-                        document.getElementById('wrapper').innerHTML +=
+                        document.body.innerHTML +=
 
                             '<div class="lock">' +
 

@@ -110,10 +110,10 @@ body::-webkit-scrollbar {
 
 .lock {
     border: thick solid slategray;
-    margin: 0 auto 10;
+    margin: 0 auto;
     position: relative;
-    top: 10px;
     box-shadow: 0px 0px 10px 5px lightblue;
+    font-family: monospace;
 }
 
 .image_container {
@@ -341,6 +341,10 @@ i:hover {
     .brackets img {
         width: 100%;
     }
+
+    .lock {
+        top: 65px;
+    }
 }
 
 
@@ -348,6 +352,7 @@ i:hover {
 
     .lock {
         width: 610px;
+        top: 10px;
     }
 
     .code2 {
