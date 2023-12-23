@@ -40,17 +40,11 @@
 
                         document.body.innerHTML +=
 
-                            '<div class="lock">' +
+                            '<center class="lock">' +
 
-                            '<div class="image_container big_size">' +
+                            '<img width="80%" src="' + i + '/lock.jpg" />' +
 
-                            '<img src="' + i + '/lock.jpg" />' +
-
-                            '</div>' +
-
-                            '<br/>' +
-
-                            '<center>' +
+                            '<br/><br/>' +
 
                             '<strong>' + product_code + '</strong>' +
 
@@ -60,13 +54,11 @@
 
                             '<h3>' + arr[i].title + '</h3>' +
 
-                            '<div class="toggle" id="' + overview_content + '">' + arr[i].body + '</div>' +
+                            '<div>' + arr[i].body + '</div>' +
 
                             '<br/>' +
 
                             '</center>' +
-
-                            '</div>' +
 
                             '<br/>'
                     }

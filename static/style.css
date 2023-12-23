@@ -215,7 +215,7 @@ body::-webkit-scrollbar {
 }
 
 #catalog {
-    padding: 10px;
+    padding: 30px 10px 10px;
 }
 
 #catalog img {
@@ -237,6 +237,7 @@ body::-webkit-scrollbar {
 
 #about img {
     width: 100%;
+    margin-top: 20px;
 }
 
 .img_buttons {
@@ -307,10 +308,6 @@ i:hover {
 
     .image_container img {
         width: 100%;
-    }
-
-    #about img {
-        margin-top: 25px;
     }
 }
 

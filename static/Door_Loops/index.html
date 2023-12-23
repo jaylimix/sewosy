@@ -23,18 +23,21 @@
     document.head.appendChild(link)
 
     fetch('/api_door_loops')
+
         .then(
+
             function (response) {
+
                 if (response.status !== 200) {
+
                     console.log(response.status)
+
                     return;
                 }
 
                 response.json().then(function (arr) {
 
                     for (var i = 0; i < arr.length; i++) {
-
-                        console.log(arr[i])
 
                         var lock_jpg = i + '_lock.jpg'
 
