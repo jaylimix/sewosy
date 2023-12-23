@@ -26,11 +26,15 @@
 
     if (screen.width <= 480) {
 
-        document.body.innerHTML += '<video muted autoplay loop id="video" width="100%" height="100%"><source src="small_video.mp4?true" type="video/mp4"></video>'
+        document.body.innerHTML +=
+
+            '<video muted autoplay loop id="video" width="100%" height="100%"><source src="small_video.mp4?true" type="video/mp4"></video>'
     }
     else {
 
-        document.body.innerHTML += '<video muted autoplay loop id="video" width="100%" height="100%"><source src="big_video.mp4?false" type="video/mp4"></video>'
+        document.body.innerHTML +=
+
+            '<video muted autoplay loop id="video" width="100%" height="100%"><source src="big_video.mp4?false" type="video/mp4"></video>'
     }
 
     function check_video_running() {

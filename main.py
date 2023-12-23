@@ -13,7 +13,7 @@ def home():
 @app.get("/menu_1")
 def menu_1():
 
-    return [{"pages": "400mm Aluminium Door Handles with Electromagnetic Lock"}, {"pages": "600mm Aluminium Door Handles with Electromagnetic Lock"}, {"pages": "2500mm Aluminium Door Handles with Electromagnetic Lock"}, {"pages": "3000mm Aluminium Door Handles with Electromagnetic Lock"}, {"pages": "Extensions"}]
+    return [{"pages": "400mm Aluminium Door Handles with Electromagnetic Locks"}, {"pages": "600mm Aluminium Door Handles with Electromagnetic Locks"}, {"pages": "2500mm Aluminium Door Handles with Electromagnetic Locks"}, {"pages": "3000mm Aluminium Door Handles with Electromagnetic Locks"}, {"pages": "Extensions"}]
 
 
 @app.get("/menu_2")
@@ -25,7 +25,7 @@ def menu_2():
 @app.get("/top_menu")
 def top_menu():
 
-    return [{"pages": "300 lbs Electromagnetic Locks"}, {"pages": "400 lbs Electromagnetic Locks"}, {"pages": "600 lbs Electromagnetic Locks"}, {"pages": "800 lbs Electromagnetic Locks"}, {"pages": "1200 lbs Electromagnetic Locks"}, {"pages": "1500 lbs Electromagnetic Locks"}, {"pages": "Brackets & Covers"}, {"pages": "400mm Aluminium Door Handles with Electromagnetic Lock"}, {"pages": "600mm Aluminium Door Handles with Electromagnetic Lock"}, {"pages": "2500mm Aluminium Door Handles with Electromagnetic Lock"}, {"pages": "3000mm Aluminium Door Handles with Electromagnetic Lock"}, {"pages": "Extensions"}, {"pages": "Door Loops"}, {"pages": "Push Buttons"}, {"pages": "Catalog"}]
+    return [{"pages": "300 lbs Electromagnetic Locks"}, {"pages": "400 lbs Electromagnetic Locks"}, {"pages": "600 lbs Electromagnetic Locks"}, {"pages": "800 lbs Electromagnetic Locks"}, {"pages": "1200 lbs Electromagnetic Locks"}, {"pages": "1500 lbs Electromagnetic Locks"}, {"pages": "Brackets & Covers"}, {"pages": "400mm Aluminium Door Handles with Electromagnetic Locks"}, {"pages": "600mm Aluminium Door Handles with Electromagnetic Locks"}, {"pages": "2500mm Aluminium Door Handles with Electromagnetic Locks"}, {"pages": "3000mm Aluminium Door Handles with Electromagnetic Locks"}, {"pages": "Extensions"}, {"pages": "Door Loops"}, {"pages": "Push Buttons"}, {"pages": "Catalog"}]
 
 
 @app.get("/api_about")
