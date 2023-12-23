@@ -1,7 +1,5 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" type="text/css" href="style.css" />
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <link rel="icon" type="image/x-icon" href="/favicon.png">
@@ -10,9 +8,23 @@
 
 <div id="video_loading">Video<br />Loading</div>
 
-<script src="/javas.js"></script>
-
 <script>
+
+    var script = document.createElement('script')
+
+    script.src = "/javas.js?" + Math.random()
+
+    document.head.appendChild(script)
+
+    var link = document.createElement('link')
+
+    link.type = 'text/css'
+
+    link.rel = 'stylesheet'
+
+    link.href = "/style.css?" + Math.random()
+
+    document.head.appendChild(link)
 
     if (screen.width <= 480) {
 
