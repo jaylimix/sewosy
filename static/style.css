@@ -20,7 +20,7 @@ body::-webkit-scrollbar {
     height: 100%;
     position: fixed;
     top: 0px;
-    width: 160px;
+    width: 145px;
     background-color: slategray;
 }
 
@@ -45,7 +45,6 @@ body::-webkit-scrollbar {
     display: block;
     word-wrap: break-word;
     border-bottom: 1px solid white;
-    font-size: 20px;
     text-decoration: none;
     color: white;
     padding: 10px;
