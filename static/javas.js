@@ -192,12 +192,12 @@ fetch('/top_menu')
 
                 for (var i = 0; i < arr.length; i++) {
 
-                    if (arr[i].pages == "Installation Video") {
+                    list +=
+                        '<a href="/' + arr[i].pages.replace(/ /g, "_") + '">' +
 
-                        arr[i].pages = "Aluminium Door Handle Installation Video"
-                    }
+                        ((arr[i].pages == "Installation Video") ? 'Aluminium Door Handle Installation Video' : arr[i].pages) +
 
-                    list += '<a href="/' + arr[i].pages.replace(/ /g, "_") + '">' + arr[i].pages + '</a>';
+                        '</a>';
                 }
 
                 document.body.innerHTML += top_navigation + list + '<br/><br/><br/></div>'
