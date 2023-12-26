@@ -1,0 +1,39 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="icon" type="image/x-icon" href="/favicon.png">
+
+<div id="video_loading">Video<br />Loading</div>
+
+<script>
+
+    var script = document.createElement('script')
+
+    script.src = "/javas.js?" + Math.random()
+
+    document.head.appendChild(script)
+
+    var link = document.createElement('link')
+
+    link.type = 'text/css'
+
+    link.rel = 'stylesheet'
+
+    link.href = "/style.css?" + Math.random()
+
+    document.head.appendChild(link)
+
+    if (screen.width >= 980) {
+
+        document.body.innerHTML +=
+
+            '<video muted autoplay loop id="video" width="100%" height="100%"><source src="video.mp4?true" type="video/mp4"></video>'
+    }
+    else {
+
+        document.body.innerHTML +=
+
+            '<video muted autoplay loop id="video" width="100%" height="100%"><source src="rotated.mp4?true" type="video/mp4"></video>'
+    }
+</script>
