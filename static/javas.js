@@ -192,6 +192,11 @@ fetch('/top_menu')
 
                 for (var i = 0; i < arr.length; i++) {
 
+                    if (arr[i].pages == "Installation Video") {
+
+                        arr[i].pages = "Aluminium Door Handle Installation Video"
+                    }
+
                     list += '<a href="/' + arr[i].pages.replace(/ /g, "_") + '">' + arr[i].pages + '</a>';
                 }
 
