@@ -193,6 +193,7 @@ fetch('/top_menu')
                 for (var i = 0; i < arr.length; i++) {
 
                     list +=
+
                         '<a href="/' + arr[i].pages.replace(/ /g, "_") + '">' +
 
                         ((arr[i].pages == "Installation Video") ? 'Aluminium Door Handle Installation Video' : arr[i].pages) +
