@@ -4,9 +4,9 @@ document.body.innerHTML +=
 
     '<a href="/"><img src="/logo.png" alt="Sewosy" /></a>' +
 
-    '<a href="/about">About Us</a>' +
+    '<a href="/About_Us">About Us</a>' +
 
-    '<a href="/contact">Contact Us</a>' +
+    '<a href="/Contact_Us">Contact Us</a>' +
 
     '</div>'
 
@@ -182,23 +182,26 @@ fetch('/top_menu')
 
                     '</div>' +
 
-                    '<div id="menu" class="navigation" hidden>' +
-
-                    '<a href="/about">About Us</a>' +
-
-                    '<a href="/contact">Contact Us</a>'
+                    '<div id="menu" class="navigation" hidden>'
 
                 var list = ''
 
                 for (var i = 0; i < arr.length; i++) {
 
-                    list +=
+                    if (arr[i].pages == "Installation Video") {
 
-                        '<a href="/' + arr[i].pages.replace(/ /g, "_") + '">' +
+                        list += '<a href="/' + arr[i].pages.replace(/ /g, "_") + '">Aluminium Door Handle Installation Video</a>'
 
-                        ((arr[i].pages == "Installation Video") ? 'Aluminium Door Handle Installation Video' : arr[i].pages) +
+                    } else if (arr[i].pages == "Extensions") {
 
-                        '</a>';
+                        list += '<a href="/' + arr[i].pages.replace(/ /g, "_") + '">Aluminium Door Handle Extensions</a>'
+
+                    } else {
+
+                        list +=
+
+                            '<a href="/' + arr[i].pages.replace(/ /g, "_") + '">' + arr[i].pages + '</a>'
+                    }
                 }
 
                 document.body.innerHTML += top_navigation + list + '<br/><br/><br/></div>'

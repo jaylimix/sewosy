@@ -25,7 +25,7 @@ def menu_2():
 @app.get("/top_menu")
 def top_menu():
 
-    return [{"pages": "300 lbs Electromagnetic Locks"}, {"pages": "400 lbs Electromagnetic Locks"}, {"pages": "600 lbs Electromagnetic Locks"}, {"pages": "800 lbs Electromagnetic Locks"}, {"pages": "1200 lbs Electromagnetic Locks"}, {"pages": "1500 lbs Electromagnetic Locks"}, {"pages": "Brackets & Covers"}, {"pages": "400mm Aluminium Door Handles with Electromagnetic Locks"}, {"pages": "600mm Aluminium Door Handles with Electromagnetic Locks"}, {"pages": "2500mm Aluminium Door Handles with Electromagnetic Locks"}, {"pages": "3000mm Aluminium Door Handles with Electromagnetic Locks"}, {"pages": "Extensions"}, {"pages": "Installation Video"}, {"pages": "Door Loops"}, {"pages": "Push Buttons"}, {"pages": "Catalog"}]
+    return [{"pages": "300 lbs Electromagnetic Locks"}, {"pages": "400 lbs Electromagnetic Locks"}, {"pages": "600 lbs Electromagnetic Locks"}, {"pages": "800 lbs Electromagnetic Locks"}, {"pages": "1200 lbs Electromagnetic Locks"}, {"pages": "1500 lbs Electromagnetic Locks"}, {"pages": "Brackets & Covers"}, {"pages": "400mm Aluminium Door Handles with Electromagnetic Locks"}, {"pages": "600mm Aluminium Door Handles with Electromagnetic Locks"}, {"pages": "2500mm Aluminium Door Handles with Electromagnetic Locks"}, {"pages": "3000mm Aluminium Door Handles with Electromagnetic Locks"}, {"pages": "Extensions"}, {"pages": "Installation Video"}, {"pages": "Door Loops"}, {"pages": "Push Buttons"}, {"pages": "Catalog"}, {"pages": "About Us"}, {"pages": "Contact Us"}]
 
 
 @app.get("/api_about")
