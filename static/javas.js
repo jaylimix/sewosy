@@ -188,20 +188,8 @@ fetch('/top_menu.json?' + Math.random())
 
                 for (var i = 0; i < arr.length; i++) {
 
-                    if (arr[i].pages == "Installation Video") {
+                    list += '<a href="/' + arr[i].pages.replace(/ /g, "_") + '">' + arr[i].pages + '</a>'
 
-                        list += '<a href="/' + arr[i].pages.replace(/ /g, "_") + '">Aluminium Door Handle Installation Video</a>'
-
-                    } else if (arr[i].pages == "Extensions") {
-
-                        list += '<a href="/' + arr[i].pages.replace(/ /g, "_") + '">Aluminium Door Handle Extensions</a>'
-
-                    } else {
-
-                        list +=
-
-                            '<a href="/' + arr[i].pages.replace(/ /g, "_") + '">' + arr[i].pages + '</a>'
-                    }
                 }
 
                 document.body.innerHTML += top_navigation + list + '<br/><br/><br/></div>'

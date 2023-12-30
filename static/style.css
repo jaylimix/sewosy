@@ -103,8 +103,8 @@ body::-webkit-scrollbar {
 
     margin: 0 auto;
     font-size: 15px;
-    text-align: center;
     font-family: monospace;
+    height: 100%;
 }
 
 #about {
@@ -225,10 +225,6 @@ body::-webkit-scrollbar {
     width: 50%;
 }
 
-#contact {
-    padding-bottom: 30px;
-}
-
 #about {
     padding-left: 10px;
     padding-right: 10px;
@@ -311,6 +307,10 @@ i:hover {
 
     .image_container img {
         width: 100%;
+    }
+
+    .height_control {
+        max-width: 50%;
     }
 }
 
