@@ -22,19 +22,37 @@
 
     document.head.appendChild(link)
 
-</script>
+    fetch('data.json')
 
-<div id="contact" class="wrapper">
-    <img src="contact.png" alt="Map" />
-    <h3>Sewosy Malaysia Sdn Bhd</h3>
-    <div>01 Jalan BS 7/15</div>
-    <div>Taman Perindustrian Bukit Serdang</div>
-    <div>43300 Seri Kembangan</div>
-    <div>Selangor Darul Ehsan Malaysia</div>
-    <h3>Email:</h3>
-    <div><a href="mailto:info@sewosy.com.my">info@sewosy.com.my</a></div>
-    <h3>Telephone:</h3>
-    <div>+60 389488119</div>
-    <h3>Fax:</h3>
-    <div>+60 389416118</div>
-</div>
+        .then(
+
+            function (response) {
+
+                if (response.status !== 200) {
+
+                    alert(response.status)
+
+                    return;
+                }
+
+                response.json().then(function (arr) {
+
+                    document.body.innerHTML +=
+
+                        '<div id="contact" class="wrapper">' +
+
+                        '<img src="contact.png" alt="Map" />' +
+
+                        arr.body_1 + arr.body_2 + arr.body_3 + arr.body_4 + arr.body_5 + arr.body_6 + arr.body_7 + arr.body_8 + arr.body_9 + arr.body_10 + arr.body_11
+
+                    '</div>'
+
+                });
+            }
+        )
+        .catch(function (err) {
+
+            alert(err)
+        })
+
+</script>

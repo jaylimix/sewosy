@@ -14,7 +14,7 @@ const menu = new URLSearchParams(window.location.search).get('menu')
 
 if (menu == null) {
 
-    fetch('/home')
+    fetch('/home.json?' + Math.random())
 
         .then(
 
@@ -52,14 +52,14 @@ if (menu == null) {
         )
         .catch(function (err) {
 
-            alert(err)
+            console.log(err)
         });
 }
 
 
 if (menu == 1) {
 
-    fetch('/menu_1')
+    fetch('/menu_1.json?' + Math.random())
 
         .then(
 
@@ -107,7 +107,7 @@ if (menu == 1) {
 
 if (menu == 2) {
 
-    fetch('/menu_2')
+    fetch('/menu_2.json?' + Math.random())
 
         .then(
 
@@ -149,7 +149,7 @@ if (menu == 2) {
         });
 }
 
-fetch('/top_menu')
+fetch('/top_menu.json?' + Math.random())
 
     .then(
 
@@ -223,12 +223,15 @@ function change_arrows_and_menu_items(value) {
 
         append += '<i onclick="change_arrows_and_menu_items(1)" class="fa-solid fa-circle-arrow-right"></i>'
 
-        fetch('/home')
+        fetch('/home.json?' + Math.random())
+
             .then(
                 function (response) {
 
                     if (response.status !== 200) {
+
                         document.getElementById('right_panel').innerHTML = 'Looks like there was a problem. Status Code: ' + response.status
+
                         return;
                     }
 
@@ -245,23 +248,32 @@ function change_arrows_and_menu_items(value) {
                 }
             )
             .catch(function (err) {
+
                 document.getElementById("right_panel").innerHTML = 'Fetch Error :-S ' + err
             });
     }
 
     if (value == 1) {
 
-        append += '<i onclick="change_arrows_and_menu_items(0)" class="fa-solid fa-circle-arrow-left"></i>' +
+        append +=
+
+            '<i onclick="change_arrows_and_menu_items(0)" class="fa-solid fa-circle-arrow-left"></i>' +
+
             '&nbsp&nbsp&nbsp&nbsp' +
+
             '<i onclick="change_arrows_and_menu_items(2)" class="fa-solid fa-circle-arrow-right"></i>' +
+
             '</a>'
 
-        fetch('/menu_1')
+        fetch('/menu_1.json?' + Math.random())
+
             .then(
                 function (response) {
 
                     if (response.status !== 200) {
+
                         document.getElementById('right_panel').innerHTML = 'Looks like there was a problem. Status Code: ' + response.status
+
                         return;
                     }
 
@@ -278,6 +290,7 @@ function change_arrows_and_menu_items(value) {
                 }
             )
             .catch(function (err) {
+
                 document.getElementById("right_panel").innerHTML = 'Fetch Error :-S ' + err
             });
 
@@ -285,15 +298,22 @@ function change_arrows_and_menu_items(value) {
 
     if (value == 2) {
 
-        append += '<i onclick="change_arrows_and_menu_items(3)" class="fa-solid fa-circle-arrow-left"></i>' +
+        append +=
+
+            '<i onclick="change_arrows_and_menu_items(3)" class="fa-solid fa-circle-arrow-left"></i>' +
+
             '</a>'
 
-        fetch('/menu_2')
+        fetch('/menu_2.json?' + Math.random())
+
             .then(
+
                 function (response) {
 
                     if (response.status !== 200) {
+
                         document.getElementById('right_panel').innerHTML = 'Looks like there was a problem. Status Code: ' + response.status
+
                         return;
                     }
 
@@ -310,6 +330,7 @@ function change_arrows_and_menu_items(value) {
                 }
             )
             .catch(function (err) {
+
                 document.getElementById("right_panel").innerHTML = 'Fetch Error :-S ' + err
             });
     }
@@ -323,20 +344,28 @@ function change_arrows_and_menu_items(value) {
 function change_content(element, number, overview_or_spec) {
 
     element.style.background = "slategray"
+
     element.style.color = "white"
+
     element.style.textShadow = "1px 1px black"
 
-    document.getElementById(overview_or_spec + number).style.color = "black";
-    document.getElementById(overview_or_spec + number).style.background = "white";
-    document.getElementById(overview_or_spec + number).style.textShadow = "none";
+    document.getElementById(overview_or_spec + number).style.color = "black"
+
+    document.getElementById(overview_or_spec + number).style.background = "white"
+
+    document.getElementById(overview_or_spec + number).style.textShadow = "none"
 
     if (overview_or_spec == "overview_") {
-        document.getElementById("overview_content_" + number).setAttribute("hidden", true);
-        document.getElementById("overview_spec_" + number).removeAttribute("hidden");
+
+        document.getElementById("overview_content_" + number).setAttribute("hidden", true)
+
+        document.getElementById("overview_spec_" + number).removeAttribute("hidden")
     }
     else {
-        document.getElementById("overview_content_" + number).removeAttribute("hidden");
-        document.getElementById("overview_spec_" + number).setAttribute("hidden", true);
+
+        document.getElementById("overview_content_" + number).removeAttribute("hidden")
+
+        document.getElementById("overview_spec_" + number).setAttribute("hidden", true)
     }
 
 }
@@ -345,7 +374,7 @@ function toggle_menu(value) {
 
     if (value) {
 
-        document.getElementById("menu").removeAttribute("hidden");
+        document.getElementById("menu").removeAttribute("hidden")
 
         document.getElementById("icon").innerHTML = '<i class="fa fa-bars" onclick="toggle_menu(false)"></i>'
 
@@ -355,7 +384,7 @@ function toggle_menu(value) {
     }
     else {
 
-        document.getElementById("menu").setAttribute("hidden", true);
+        document.getElementById("menu").setAttribute("hidden", true)
 
         document.getElementById("icon").innerHTML = '<i class="fa fa-bars" onclick="toggle_menu(true)"></i>'
 

@@ -22,11 +22,16 @@
 
     document.head.appendChild(link)
 
-    fetch('/api_extensions')
+    fetch('data.json?' + Math.random())
+
         .then(
+
             function (response) {
+
                 if (response.status !== 200) {
-                    console.log(response.status)
+
+                    alert(response.status)
+
                     return;
                 }
 
@@ -66,6 +71,7 @@
             }
         )
         .catch(function (err) {
-            console.log(err)
-        });
+
+            alert(err)
+        })
 </script>

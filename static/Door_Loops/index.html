@@ -22,7 +22,7 @@
 
     document.head.appendChild(link)
 
-    fetch('/api_door_loops')
+    fetch('data.json?' + Math.random())
 
         .then(
 
@@ -30,7 +30,7 @@
 
                 if (response.status !== 200) {
 
-                    console.log(response.status)
+                    alert(response.status)
 
                     return;
                 }
@@ -94,6 +94,6 @@
         )
         .catch(function (err) {
 
-            console.log(err)
+            alert(err)
         });
 </script>
