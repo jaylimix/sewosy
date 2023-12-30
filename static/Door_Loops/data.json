@@ -1,0 +1,127 @@
+[
+    {
+        "product_code": "DLI7",
+        "title": "9/7mm Stainless Steel Door Loop",
+        "body": "Stainless steel door loop 50cm, diameter 9/7mm. This door loop has an inner diameter of 7mm for concealed wires to run through, 9mm outer dimension."
+    },
+    {
+        "product_code": "DLI7/30",
+        "title": "9/7mm Stainless Steel Door Loop",
+        "body": "Stainless steel door loop 30cm, diameter 9/7mm. This door loop has an inner diameter of 7mm for concealed wires to run through, 9mm outer dimension."
+    },
+    {
+        "product_code": "DLI10",
+        "title": "13/10mm Stainless Steel Door Loop",
+        "body": "Stainless steel door loop 50cm, diameter 13/10mm. This door loop has an inner diameter of 10mm for concealed wires to run through, 13mm outer dimension."
+    },
+    {
+        "product_code": "DLRI10",
+        "title": "13/10mm Reinforced Stainless Steel Door Loop",
+        "body": "Reinforced stainless steel door loop 50cm, diameter 13/10mm. This door loop has an inner diameter of 10mm for concealed wires to run through, 13mm outer dimension."
+    },
+    {
+        "product_code": "DLRI10EC",
+        "title": "13/10mm Reinforced Stainless Steel Door Loop",
+        "body": "Reinforced stainless steel door loop 50cm, diameter 13/10mm with square end caps. This door loop has an inner diameter of 10mm for concealed wires to run through, 13mm outer dimension."
+    },
+    {
+        "product_code": "DLN7",
+        "title": "9/7mm Black Door Loop",
+        "body": "Black door loop 50cm, diameter 9/7mm. This door loop has an inner diameter of 7mm for concealed wires to run through, 9mm outer dimension."
+    },
+    {
+        "product_code": "DLN10",
+        "title": "13/10mm Black Door Loop",
+        "body": "Black door loop 50cm, diameter 13/10mm. This door loop has an inner diameter of 10mm for concealed wires to run through, 13mm outer dimension."
+    },
+    {
+        "product_code": "DLB7",
+        "title": "9/7mm White Door Loop",
+        "body": "White door loop 50cm, diameter 9/7mm. This door loop has an inner diameter of 7mm for concealed wires to run through, 9mm outer dimension."
+    },
+    {
+        "product_code": "DLB10",
+        "title": "9/7mm White Door Loop",
+        "body": "White door loop 50cm, diameter 13/10mm. This door loop has an inner diameter of 10mm for concealed wires to run through, 13mm outer dimension."
+    },
+    {
+        "product_code": "RLI7",
+        "title": "9/7mm Stainless Steel Door Loop",
+        "body": "Stainless Steel Door Loop 10m roll, diameter 9/7mm. Optional accessory is nickel-plated end caps product code ECRLI7."
+    },
+    {
+        "product_code": "RLI10",
+        "title": "13/10mm Stainless Steel Door Loop",
+        "body": "Stainless Steel Door Loop 10m roll, diameter 13/10mm. Optional accessory is nickel-plated end caps product code ECRLI10."
+    },
+    {
+        "product_code": "RLN7",
+        "title": "9/7mm Black Door Loop",
+        "body": "Black Door Loop 10m roll, diameter 13/10mm. Optional accessory is black end caps product code ECRLN7."
+    },
+    {
+        "product_code": "RLN10",
+        "title": "13/10mm Black Door Loop",
+        "body": "Black Door Loop 10m roll, diameter 13/10mm. Optional accessory is black end caps product code ECRLN10."
+    },
+    {
+        "product_code": "RLB7",
+        "title": "9/7mm White Door Loop",
+        "body": "White Door Loop 10m roll, diameter 9/7mm. Optional accessory is white end caps product code ECRLB7."
+    },
+    {
+        "product_code": "RLB10",
+        "title": "13/10mm White Door Loop",
+        "body": "White Door Loop 10m roll, diameter 13/10mm. Optional accessory is white end caps product code ECRLB10."
+    },
+    {
+        "product_code": "ECRLI7",
+        "title": "Nickel Plated End Caps for RLI7",
+        "body": "This nickel plated end cap is for stainless steel door loop of 9mm diameter. "
+    },
+    {
+        "product_code": "ECRLI10",
+        "title": "Nickel Plated End Caps for RLI10",
+        "body": "This nickel plated end cap is for stainless steel door loop of 13mm diameter. "
+    },
+    {
+        "product_code": "ECRLN7",
+        "title": "Black End Caps for RLN7",
+        "body": "This black end cap is for black door loop of 9mm diameter. "
+    },
+    {
+        "product_code": "ECRLN10",
+        "title": "Black End Caps for RLN7",
+        "body": "This black end cap is for black door loop of 13mm diameter. "
+    },
+    {
+        "product_code": "ECRLB7",
+        "title": "White End Caps for RLB7",
+        "body": "This white end cap is for white door loop of 9mm diameter. "
+    },
+    {
+        "product_code": "ECRLB10",
+        "title": "White End Caps for RLB10",
+        "body": "This white end cap is for white door loop of 13mm diameter. "
+    },
+    {
+        "product_code": "DLMC",
+        "title": "Adjustable Mortise Casing 260-480mm",
+        "body": "This is a mortised type with metal casing. It can be concealed into wooden and aluminium door frame. The length can be adjusted up to 480mm from 260mm."
+    },
+    {
+        "product_code": "DLS170",
+        "title": "170mm Spring",
+        "body": "Opening angle up to 90°"
+    },
+    {
+        "product_code": "DLS210",
+        "title": "210mm Spring",
+        "body": "Opening angle up to 110°"
+    },
+    {
+        "product_code": "DLS390",
+        "title": "390mm Spring",
+        "body": "Opening angle up to 180°"
+    }
+]

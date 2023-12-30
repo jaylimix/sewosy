@@ -1,0 +1,89 @@
+[
+    {
+        "product_code": "CPREG-1/3000AS",
+        "ip": "42",
+        "voltage": "12/24VDC",
+        "operating_temparature": "-10° to 60°C",
+        "holding_force": "300lbs x 2",
+        "current": "960/480mA",
+        "title": "Natural Anodizing Electromagnetic Door Handle 12/24V DC + Contact",
+        "body": "This is an aluminium door handle incorporating two 600lb holding force of stainless steel electromagnetic locks into it.<br/><br/>The door handle lock comes in 2 pieces whereby the locks are already pre-mounted with wires and connectors on one piece and the armature plates are fitted on the other.<br/><br/>Even the screw holes are pre-drilled for ease of installation.<br/><br/>The length of 2500mm can be specified and adjusted to the length of the doors if requested before delivery.<br/><br/>Tampering of this product is made extremely difficult because the wires, screws and armature plates are concealed by its aluminium covers and end caps.<br/><br/>The design of this product ensures perfect alignment.<br/><br/>This CPREG handle is compatible with any alarm and access control systems.<br/><br/>This handle can be installed only on aluminium and wooden doors.",
+        "downloads": [
+            "product_catalog",
+            "dimensional_drawing_1",
+            "dimensional_drawing_2",
+            "mounting_diagram_1",
+            "mounting_diagram_2",
+            "mounting_diagram_3"
+        ]
+    },
+    {
+        "product_code": "CPREG-1/3000B",
+        "ip": "42",
+        "voltage": "12/24VDC",
+        "operating_temparature": "-10° to 60°C",
+        "holding_force": "300lbs x 2",
+        "current": "960/480mA",
+        "title": "Non Anodized Electromagnetic Door Handle 12/24V DC + Contact",
+        "body": "This is an aluminium door handle that can be fitted with 2 stainless steel electromagnetic locks each with 600lb holding force.<br/><br/> The door handle can be powder-coated to the colour of choice and the length can be adapted to the length of the door.<br/><br/>The design of this product ensures perfect alignment and prevents tampering as the wires, screws and armature plates are concealed by aluminium covers and end caps.<br/><br/> It can be incorporated with alarm and access control systems.<br/><br/> This handle can be installed only on aluminium and wooden doors.",
+        "downloads": [
+            "product_catalog"
+        ]
+    },
+    {
+        "product_code": "CPREG-P/3000AS",
+        "ip": "",
+        "voltage": "",
+        "operating_temparature": "",
+        "holding_force": "",
+        "current": "",
+        "title": "Natural Anodizing Reinforcement Profile with Handle",
+        "body": "This aluminium handle is an accessory for CPREG-1/3000.<br/><br/>It is an added compliment to the whole installation.<br/><br/>This part is fixed to the other side of the door parallel to CPREG-1/3000 on another side. ",
+        "downloads": [
+            "product_catalog",
+            "dimensional_drawing",
+            "mounting_diagram"
+        ]
+    },
+    {
+        "product_code": "CPREG-P/3000B",
+        "ip": "",
+        "voltage": "",
+        "operating_temparature": "",
+        "holding_force": "",
+        "current": "",
+        "title": "Non-Anodized Reinforcement Profile with Handle",
+        "body": "This non-anodized aluminium handle is an accessory for CPREG-1/3000.<br/><br/>It is an added compliment to the whole installation.<br/><br/>This part is fixed to the other side of the door parallel to CPREG-1/3000 on another side. ",
+        "downloads": [
+            "product_catalog"
+        ]
+    },
+    {
+        "product_code": "CPREG-S/3000AS",
+        "ip": "",
+        "voltage": "",
+        "operating_temparature": "",
+        "holding_force": "",
+        "current": "",
+        "title": "Natural Anodizing Reinforcement Profile",
+        "body": "This part acts as an optional accessory for CPREG-1/3000 whereby it is fixed to the other side of the door parallel to CPREG-1/3000 on another side.",
+        "downloads": [
+            "product_catalog",
+            "dimensional_drawing",
+            "mounting_diagram"
+        ]
+    },
+    {
+        "product_code": "CPREG-S/3000B",
+        "ip": "",
+        "voltage": "",
+        "operating_temparature": "",
+        "holding_force": "",
+        "current": "",
+        "title": "Non-Anodized Reinforcement Profile",
+        "body": "This part acts as an optional accessory for CPREG-1/3000 whereby it is fixed to the other side of the door parallel to CPREG-1/3000 on another side.",
+        "downloads": [
+            "product_catalog"
+        ]
+    }
+]

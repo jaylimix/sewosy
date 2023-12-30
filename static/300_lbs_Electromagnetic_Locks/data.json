@@ -1,0 +1,62 @@
+[
+    {
+        "product_code": "EF150",
+        "title": "300 lbs Surface Electromagnetic Lock Unmonitored 12-24V DC",
+        "body": "Suitable for single aluminium, glass and not too heavy wooden doors this lock is small, compact and easy to mount on any types of doors with its range of brackets to complement it. <br/><br/>Set at 12VDC at factory outlet, this unmonitored lock is meant for convenience in exit and entry situations when in used with any access control systems.",
+        "ip": "42",
+        "voltage": "12 / 24VDC",
+        "current": "480 / 240mA",
+        "holding_force": "300lbs / 150kg",
+        "body_dimension": "170 x 35 x 21mm",
+        "operating_temparature": "-10° to 55°C",
+        "armature_plate_dimension": "130 x 33 x 11mm"
+    },
+    {
+        "product_code": "EF150-2",
+        "title": "2x 300 lbs Surface Double Electromagnetic Lock Unmonitored 12-24V DC",
+        "body": "Specifically for use on double doors of glass, wooden and aluminium, this double lock does not compromise on the aesthetic value of the whole access control system. <br/><br/>It holds two doors at the same time each with a 300lb holding force. Set at 12VDC, it can be converted to 24VDC at prior request. <br/><br/>This double lock is unmonitored and is good for the purpose of exit and entry situations when used with any access control systems.",
+        "ip": "42",
+        "voltage": "12/24VDC",
+        "current": "960/480mA",
+        "holding_force": "300lbs x 2",
+        "body_dimension": "420 x 35 x 21mm",
+        "operating_temparature": "-10° to 55°C",
+        "armature_plate_dimension": "130 x 33 x 11mm"
+    },
+    {
+        "product_code": "EF150CTC",
+        "title": "300 lbs Surface Electromagnetic Lock Monitored 12-24V DC Contact + LED",
+        "body": "This lock is small, compact and monitored and can be in either 12VDC or 24VDC.<br/><br/>The CTC model is with light emitting diode or LED for monitoring purpose and is compatible with all kinds of access control systems.<br/><br/>Though it is suitable for all types of doors it is not recommended for too heavy wooden doors because it has only a 300lb holding force.",
+        "ip": "42",
+        "voltage": "12/24VDC",
+        "operating_temparature": "-10° to 55°C",
+        "holding_force": "300lbs",
+        "body_dimension": "210 x 35 x 21mm",
+        "armature_plate_dimension": "130 x 33 x 11mm",
+        "current": "480/240mA"
+    },
+    {
+        "product_code": "EF150CTC-2",
+        "title": "2x 300 lbs Surface Double Electromagnetic Lock Monitored 12-24V DC",
+        "body": "This lock is meant for double leaf doors of glass, aluminium and wooden make. It is monitored with visual monitoring of the LED and can be used with any access control systems and alarm systems.<br/><br/>The double lock is for double doors to be operational at the same time or for any one door to be operational.<br/><br/>The range of brackets available for this lock enables easy mounting.",
+        "ip": "42",
+        "voltage": "12/24VDC",
+        "operating_temparature": "-10° to 55°C",
+        "holding_force": "300lbs x 2",
+        "body_dimension": "210 x 35 x 11mm",
+        "armature_plate_dimension": "130 x 33 x 11mm",
+        "current": "960/480mA"
+    },
+    {
+        "product_code": "EF150ENCCTC CA",
+        "ip": "42",
+        "voltage": "12/24VDC",
+        "operating_temparature": "-10° to 55°C",
+        "holding_force": "300lbs",
+        "body_dimension": "173 x 32 x 26mm",
+        "armature_plate_dimension": "130 x 33 x 11mm",
+        "current": "480/240mA",
+        "title": "300 lbs 12-24V DC Mortise Electromagnetic Lock + Contact",
+        "body": "This lock is specially designed for light aluminium and even glass doors whereby it is concealed into a hollow aluminium or metal frame.<br/><br/>Easy to fix onto door frames, it is a fail-safe lock with 300lbs of holding force."
+    }
+]
