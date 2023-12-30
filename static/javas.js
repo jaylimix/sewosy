@@ -188,8 +188,26 @@ fetch('/top_menu.json?' + Math.random())
 
                 for (var i = 0; i < arr.length; i++) {
 
-                    list += '<a href="/' + arr[i].pages.replace(/ /g, "_") + '">' + arr[i].pages + '</a>'
+                    if (arr[i].pages == "Brackets for Electromagnetic Locks") {
 
+                        list += '<a href="/Brackets">' + arr[i].pages + '</a>'
+                    }
+                    else if (arr[i].pages == "Covers for Electromagnetic Locks") {
+
+                        list += '<a href="/Covers">' + arr[i].pages + '</a>'
+                    }
+                    else if (arr[i].pages == "Extensions for Aluminium Door Handles") {
+
+                        list += '<a href="/Extensions">' + arr[i].pages + '</a>'
+                    }
+                    else if (arr[i].pages == "Installation Video for Aluminium Door Handles") {
+
+                        list += '<a href="/Installation_Video">' + arr[i].pages + '</a>'
+                    }
+                    else {
+
+                        list += '<a href="/' + arr[i].pages.replace(/ /g, "_") + '">' + arr[i].pages + '</a>'
+                    }
                 }
 
                 document.body.innerHTML += top_navigation + list + '<br/><br/><br/></div>'
