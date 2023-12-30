@@ -1,0 +1,24 @@
+[
+    {
+        "product_code": "EF300C",
+        "title": "Aluminium Cover For EF300 Lock Range",
+        "body": "This aluminium cover is designed to conceal the electromagnetic lock with its bracket when the door is closed.<br/><br/>It is a cover for EF300 lock series with EF300L and EF300/550Z brackets.",
+        "downloads": [
+            "product_catalog",
+            "dimensional_drawing"
+        ]
+    },
+    {
+        "product_code": "EF550C",
+        "title": "Aluminium Cover For EF550 Lock Range",
+        "body": "This aluminium cover is designed to conceal the electromagnetic lock with its bracket when the door is closed.<br/><br/>It is a cover for EF550 lock series with EF500L and EF300/550Z brackets.",
+        "downloads": [
+            "product_catalog",
+            "dimensional_drawing",
+            "mounting_diagram_1",
+            "mounting_diagram_2",
+            "mounting_diagram_3",
+            "mounting_diagram_4"
+        ]
+    }
+]
