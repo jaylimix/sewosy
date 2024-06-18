@@ -8,6 +8,8 @@ document.body.innerHTML +=
 
     '<a href="/Contact_Us">Contact Us</a>' +
 
+    '<a href="/Downloads">Downloads</a>' +
+
     '</div>'
 
 const menu = new URLSearchParams(window.location.search).get('menu')

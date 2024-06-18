@@ -1,7 +1,6 @@
 body {
     margin: 0px;
     -ms-overflow-style: none;
-    scrollbar-width: none;
 }
 
 body::-webkit-scrollbar {
@@ -104,7 +103,6 @@ body::-webkit-scrollbar {
     margin: 0 auto;
     font-size: 15px;
     font-family: monospace;
-    height: 100%;
 }
 
 #about {
@@ -212,8 +210,12 @@ body::-webkit-scrollbar {
     width: 50%;
 }
 
-#about hr {
+hr {
     border: 1px solid lightgray;
+}
+
+#about hr,
+#catalog hr {
     margin-top: 30px;
 }
 
@@ -222,7 +224,7 @@ body::-webkit-scrollbar {
 }
 
 #catalog img {
-    width: 50%;
+    width: 100%;
 }
 
 #about {
